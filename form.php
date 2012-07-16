@@ -7,13 +7,13 @@
 <script type="text/javascript" >
 function dontRef(){
 	var id_msg = $('#id_msg').val();
-     $.post({
+     $.ajax({
 		 url: "target.php" , 
 		 type: "POST",
 		 data: "id_msg: " + id_msg,
-		 /*success: function(){
+		 success: function(){
 			document.form.reset();
-		 }*/
+		 }
 	});  
 	alert(11); 
       return false;
