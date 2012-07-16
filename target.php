@@ -1,3 +1,4 @@
 <?php
-print $_POST['id_msg'];
+if (isset($_GET['harChiMikhayBenvis']))
+	echo  $_GET['harChiMikhayBenvis'];
 ?>
